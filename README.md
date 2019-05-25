@@ -12,8 +12,8 @@
 ## categoriesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
-|url|string|null: false|
+|name|string|null: false, unique: true|
+|url|string|null: false, unique: true|
 
 ### Association
 - has_many :genres

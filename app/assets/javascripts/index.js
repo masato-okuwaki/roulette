@@ -2,7 +2,7 @@ $(document).on('turbolinks:load', function() {
 
   function buildHTML(category) {
     var html = `
-      <div class="selectbox">
+      <div class="selectbox_js">
         <ul>
           <li><a class: "selectbox_list" href="${category.url}">${category.name}</a></li>
         <ul>
@@ -26,6 +26,10 @@ $(document).on('turbolinks:load', function() {
        alert('お店検索に失敗しました')
      })
    };
+
+   function checkBox() {
+     
+   }
 
     var status = true;
     $(".selectbtn").on("click", function(){

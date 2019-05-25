@@ -65,7 +65,6 @@ header h1 {
   padding-top: 20px;
   color: #fff;
   font-size: 90px;
-  text-shadow: 0px 3px 6px #696969;
 }
 
 .checkbox {
@@ -80,6 +79,7 @@ header h1 {
   -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
   justify-content: center; /* 横方向中央揃え */
   border-radius: 30px;
+  box-shadow: 0px 3px 10px #666666;
 }
 
 .checkbox p {
@@ -92,7 +92,9 @@ header h1 {
 
 .selectbox {
   background: #fff;
+  text-decoration: none;
   font-size: 30px;
+  padding: 0;
   height: 160px;
   width: 60%;
   margin: 0 auto;
@@ -104,15 +106,29 @@ header h1 {
   -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
   justify-content: center; /* 横方向中央揃え */
   border-radius: 30px;
+  box-shadow: 0px 3px 10px #666666;
+}
+
+.selectbox_js {
+  text-decoration: none;
+  padding: 0;
+}
+
+.selectbox ul {
+  padding: 0;
 }
 
 .selectbox_list {
   text-align: center;
-  text-decoration:none;
+  padding: 0;
 }
 
 .selectbox li {
-  list-style-type: none
+  list-style-type: none;
+}
+
+.selectbox a {
+  text-decoration: none;
 }
 
 .btns p {
