@@ -1,0 +1,30 @@
+.form {
+  text-align: center ;
+  margin: 0;
+  padding-top: 30px;
+}
+
+#name {
+  width: 600px;
+  height: 200px;
+  font-size: 20px;
+}
+
+#url {
+  width: 600px;
+  height: 200px;
+  margin: 30px 0 0 0;
+  font-size: 20px;
+}
+
+.form__submit {
+  font-family: 'Futura', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 33px;
+  color: #ff6060;
+  background: #ffffa3;
+  width: 600px;
+  height: 100px;
+  border-radius: 30px;
+  box-shadow: 0px 3px 10px #333333;
+  margin: 30px 0 0 0;
+}
