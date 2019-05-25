@@ -10,19 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_23_141120) do
+ActiveRecord::Schema.define(version: 2019_05_25_013132) do
 
   create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name"
-    t.string "url"
+    t.string "name", null: false
+    t.string "url", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_categories_on_name", unique: true
+    t.index ["url"], name: "index_categories_on_url", unique: true
   end
 
   create_table "genres", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  create_table "genres_categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "genre_id"
+    t.bigint "categories_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["categories_id"], name: "index_genres_categories_on_categories_id"
+    t.index ["genre_id"], name: "index_genres_categories_on_genre_id"
+  end
+
+  add_foreign_key "genres_categories", "categories", column: "categories_id"
+  add_foreign_key "genres_categories", "genres"
 end
