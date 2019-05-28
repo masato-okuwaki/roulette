@@ -1,10 +1,20 @@
 $(document).on('turbolinks:load', function() {
 
-  function buildHTML(category) {
+  function buildCategory(category) {
     var html = `
       <div class="selectbox_js">
         <ul>
           <li><a class: "selectbox_list" href="${category.url}">${category.name}</a></li>
+        <ul>
+      </div>`;
+    return html;
+  };
+
+  function buildEffect() {
+    var html = `
+      <div class="selectbox_js">
+        <ul>
+          <li><a class: "selectbox_list" href="">aaa</a></li>
         <ul>
       </div>`;
     return html;
@@ -18,7 +28,7 @@ $(document).on('turbolinks:load', function() {
      })
      .done(function(data){
        console.log(data);
-         var html = buildHTML(data);
+         var html = buildCategory(data);
          $(".selectbox").html(html);
          $(".selectbtn").prop('disabled', false);
       })
@@ -27,18 +37,16 @@ $(document).on('turbolinks:load', function() {
      })
    };
 
-   function checkBox() {
-   }
-
     var status = true;
     $(".selectbtn").on("click", function(){
       if(status) {
         status = false;
         $(this).text("STOP");
-        selectCategory();
+        $(".selectbox").html("ぷるるるるるるるるるるる");
     } else {
       status = true;
       $(this).text("START");
+      selectCategory();
     }
     });
 

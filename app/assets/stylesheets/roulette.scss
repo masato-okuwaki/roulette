@@ -1,12 +1,12 @@
 html {
   font-size: 62.5%;
+  background: #fad186;
 }
 
 body {
   font-family: 'Futura', Tahoma, Geneva, Verdana, sans-serif;
   color: #696969;
   margin: 0;
-  background: #fad186;
   background-size: cover;
 }
 
@@ -73,6 +73,7 @@ header h1 {
 .checkbox {
   background: #fff;
   width: 60%;
+  height: 80px;
   margin: 0 auto 30px auto;
   text-align: center;
   display: -webkit-flex;
@@ -111,26 +112,38 @@ header h1 {
   border-radius: 10px;
 }
 
+.selectbox_a {
+  color: #ff6060;
+  text-decoration: none;
+}
+
 .selectbox_js {
   text-decoration: none;
   padding: 0;
+}
+
+.selectbox_js a {
+  text-decoration: none;
+  padding: 0;
+  color: #ff6060;
 }
 
 .selectbox ul {
   padding: 0;
 }
 
-.selectbox_list {
-  text-align: center;
-  padding: 0;
-}
-
-.selectbox li {
-  list-style-type: none;
-}
-
 .selectbox a {
   text-decoration: none;
+}
+
+.selectbox p {
+  text-decoration: none;
+}
+
+.btns {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .btns p {
@@ -143,12 +156,10 @@ header h1 {
   text-align: center;
   font-family: 'Futura', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 4rem;
-  width: 300px;
-  height: 50px;
-  margin: 30px auto;
-  border-radius: 50%;
-  height: 260px;
-  width: 260px;
+  height: 210px;
+  width: 45%;
+  margin: 30px auto 30px 0;
+  border-radius: 10px;
   display: flex;
   -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
   align-items: center; /* 縦方向中央揃え */
@@ -163,12 +174,10 @@ header h1 {
   text-align: center;
   font-family: 'Futura', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 4rem;
-  width: 300px;
-  height: 50px;
-  margin: 30px auto;
-  border-radius: 50%;
-  height: 260px;
-  width: 260px;
+  margin: 30px 0 0 auto;
+  border-radius: 10px;
+  height: 210px;
+  width: 45%;
   display: flex;
   -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
   align-items: center; /* 縦方向中央揃え */
@@ -190,7 +199,6 @@ footer {
   font-size: 18px;
   color: #fff;
   text-align: center;
-  border-radius: 30px;
   position: relative;
   bottom: 10px;
 }
