@@ -1,7 +1,6 @@
   <div class="allbox">
     <div class="title">
-      <h1>きょうのランチは<br>
-      どこに行こう？</h1>
+      <h1>きょうのランチはどこに行こう？</h1>
     </div>
 
     <div class="checkbox">
@@ -22,14 +21,11 @@
   </div>
 
     <div class="btns">
-      <p>
-        <button class="selectbtn">START</button>
-      </p>
+      <button class="selectbtn" >START</button>
+      <button class="selectbtn2"><%= link_to 'お店登録', "/roulette/:id/edit" %></button>
     </div>
 
-    <button class="setbtn">
-      <%= link_to 'お店登録', "/roulette/:id/edit" %>
-    </button>
+    <div id="move-line1"></div>
 
   <footer>
     <small>Copyright (c) MasatoOkuwaki All Rights Reserved.</small>

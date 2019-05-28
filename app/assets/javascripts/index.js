@@ -28,7 +28,6 @@ $(document).on('turbolinks:load', function() {
    };
 
    function checkBox() {
-     
    }
 
     var status = true;
@@ -42,4 +41,13 @@ $(document).on('turbolinks:load', function() {
       $(this).text("START");
     }
     });
+
+    $(function() {
+      winW = $(window).width();
+      spped = 2600;
+      $('#move-line1').animate({
+          width: winW
+      }, spped);
+  });
+
 });

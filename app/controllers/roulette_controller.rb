@@ -1,7 +1,7 @@
 class RouletteController < ApplicationController
 
   def index
-    @category = "お店の"
+    @category = "お店の名前"
   end
 
   def search

@@ -1,6 +1,18 @@
 <div class="form">
   <%= form_with url: "/roulette" do |f| %>
-    <%= f.text_field :name, placeholder: '店名を入力してください' %><br>
-    <%= f.text_field :url, placeholder: '店のURLを入力してください' %><br>
+    <div class="field">
+      <%= f.check_box :checkbox, id: :genre_checkbox, as: :boolean%>
+      <%= f.label "肉系" %>
+      <%= f.check_box :checkbox, id: :genre_checkbox, as: :boolean%>
+      <%= f.label "魚介系" %>
+      <%= f.check_box :checkbox, id: :genre_checkbox, as: :boolean%>
+      <%= f.label "野菜系" %>
+      <%= f.check_box :checkbox, id: :genre_checkbox, as: :boolean%>
+      <%= f.label "イタリアン系" %>
+      <%= f.check_box :checkbox, id: :genre_checkbox, as: :boolean%>
+      <%= f.label "中華系" %>
+    </div>
+      <%= f.text_field :name, placeholder: '店名を入力してください' %><br>
+      <%= f.text_field :url, placeholder: '店のURLを入力してください' %><br>
     <%= f.submit "お店を登録する", class: 'form__submit'%>
   <% end %>

@@ -1,21 +1,19 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Futura', Tahoma, Geneva, Verdana, sans-serif;
   color: #696969;
   margin: 0;
-  background: url("breakfast-2078286_1280.png");
+  background: #fad186;
   background-size: cover;
-}
-
-.wrapper {
-  background: rgba(250, 200, 200, 0.8);
-  background-size: cover;
-  height: 100vh;
 }
 
 header {
   background: #ffffa3;
   width: 100%;
-  height: 50px;
+  height: 60px;
   text-align: center;
   color: #ff6060;
   display: -webkit-flex;
@@ -35,9 +33,13 @@ header {
 //   box-shadow: 0px 3px 10px #fff;
 // }
 
+.image-main {
+  text-align: center;
+  padding: 10px 10px 10px 0;
+}
+
 .setbtn {
-  background: #ff6060;
-  width: 30%;
+  width: 60%;
   margin: 0 auto 30px auto;
   text-align: center;
   display: -webkit-flex;
@@ -46,25 +48,26 @@ header {
   align-items: center; /* 縦方向中央揃え */
   -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
   justify-content: center; /* 横方向中央揃え */
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 header h1 {
   margin: 0;
+  font-size: 3rem;
 }
 
 .title {
   width: 60%;
   text-align: center;
   margin: 0 auto;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .title h1 {
   margin: 0px auto 20px auto;
   padding-top: 20px;
   color: #fff;
-  font-size: 90px;
+  font-size: 5rem;
 }
 
 .checkbox {
@@ -78,12 +81,11 @@ header h1 {
   align-items: center; /* 縦方向中央揃え */
   -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
   justify-content: center; /* 横方向中央揃え */
-  border-radius: 30px;
-  box-shadow: 0px 3px 10px #666666;
+  border-radius: 10px;
 }
 
 .checkbox p {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .checkbox input {
@@ -91,9 +93,10 @@ header h1 {
 }
 
 .selectbox {
+  color: #ff6060;
   background: #fff;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 4rem;
   padding: 0;
   height: 160px;
   width: 60%;
@@ -105,8 +108,7 @@ header h1 {
   align-items: center; /* 縦方向中央揃え */
   -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
   justify-content: center; /* 横方向中央揃え */
-  border-radius: 30px;
-  box-shadow: 0px 3px 10px #666666;
+  border-radius: 10px;
 }
 
 .selectbox_js {
@@ -140,7 +142,7 @@ header h1 {
   color: #ff6060;
   text-align: center;
   font-family: 'Futura', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 33px;
+  font-size: 4rem;
   width: 300px;
   height: 50px;
   margin: 30px auto;
@@ -153,6 +155,35 @@ header h1 {
   -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
   justify-content: center; /* 横方向中央揃え */
   box-shadow: 0px 3px 10px #333333;
+}
+
+.selectbtn2 {
+  background: #ffffa3;
+  color: #ff6060;
+  text-align: center;
+  font-family: 'Futura', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4rem;
+  width: 300px;
+  height: 50px;
+  margin: 30px auto;
+  border-radius: 50%;
+  height: 260px;
+  width: 260px;
+  display: flex;
+  -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+  align-items: center; /* 縦方向中央揃え */
+  -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+  justify-content: center; /* 横方向中央揃え */
+  box-shadow: 0px 3px 10px #333333;
+}
+
+#move-line1 {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ff6060;
 }
 
 footer {
