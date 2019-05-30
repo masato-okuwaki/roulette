@@ -1,6 +1,6 @@
   <div class="allbox">
     <div class="title">
-      <h1>きょうのランチはどこに行こう？</h1>
+      <h1>ランチルーレット</h1>
     </div>
 
     <div class="checkbox">
@@ -13,29 +13,15 @@
       </p>
     </div>
 
-    <div class="roulette" style="display:none;">
-      <img src="http://example.com/star.png"/>
-      <img src="http://example.com/flower.png"/>
-      <img src="http://example.com/coin.png"/>
-      <img src="http://example.com/mshroom.png"/>
-      <img src="http://example.com/chomp.png"/>
-    </div>
-
     <div class="selectbox">
       <ul>
-        <li class="selectbox_list">お店の名前</li>
+        <li class="selectbox_list">きょうのランチは？？</li>
       <ul>
     </div>
   </div>
 
     <div class="btns">
       <button class="selectbtn" >START</button>
-      <button class="selectbtn2"><%= link_to 'お店登録', "/roulette/:id/edit", class: "selectbox_a" %></button>
+      <button class="selectbtn2"><%= link_to 'お店リスト追加', "/roulette/:id/edit", class: "selectbox_a" %></button>
     </div>
-
-    <div id="move-line1"></div>
-
-  <footer>
-    <small>Copyright (c) MasatoOkuwaki All Rights Reserved.</small>
-  </footer>
 </div>

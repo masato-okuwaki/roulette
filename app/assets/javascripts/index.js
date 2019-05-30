@@ -4,17 +4,7 @@ $(document).on('turbolinks:load', function() {
     var html = `
       <div class="selectbox_js">
         <ul>
-          <li><a class: "selectbox_list" href="${category.url}">${category.name}</a></li>
-        <ul>
-      </div>`;
-    return html;
-  };
-
-  function buildEffect() {
-    var html = `
-      <div class="selectbox_js">
-        <ul>
-          <li><a class: "selectbox_list" href="">aaa</a></li>
+          <li><a class: "selectbox_list" href="${category.url}" target="_blank">${category.name}</a></li>
         <ul>
       </div>`;
     return html;
@@ -42,7 +32,7 @@ $(document).on('turbolinks:load', function() {
       if(status) {
         status = false;
         $(this).text("STOP");
-        $(".selectbox").html("ぷるるるるるるるるるるる");
+        $(".selectbox").html("お店を検索中・・・・・");
     } else {
       status = true;
       $(this).text("START");
@@ -52,10 +42,9 @@ $(document).on('turbolinks:load', function() {
 
     $(function() {
       winW = $(window).width();
-      spped = 2600;
+      spped = 1000;
       $('#move-line1').animate({
           width: winW
       }, spped);
   });
-
 });

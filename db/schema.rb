@@ -29,13 +29,13 @@ ActiveRecord::Schema.define(version: 2019_05_25_013132) do
 
   create_table "genres_categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "genre_id"
-    t.bigint "categories_id"
+    t.bigint "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["categories_id"], name: "index_genres_categories_on_categories_id"
+    t.index ["category_id"], name: "index_genres_categories_on_category_id"
     t.index ["genre_id"], name: "index_genres_categories_on_genre_id"
   end
 
-  add_foreign_key "genres_categories", "categories", column: "categories_id"
+  add_foreign_key "genres_categories", "categories"
   add_foreign_key "genres_categories", "genres"
 end
