@@ -26,5 +26,5 @@
 |category|references|foreign_key: true|
 
 ### Association
-- belongs_to :genres
-- belongs_to :categories
+- belongs_to :genre
+- belongs_to :category
